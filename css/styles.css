@@ -648,3 +648,33 @@ img {
 .galery-link:focus .overlay {
   transform: translateY(0);
 }
+
+
+/* Вікно Замовити послугу */
+
+.form{
+  border: 1px solid red;
+}
+
+.form-label{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-label label{
+  margin-bottom: 4px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-label input{
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
