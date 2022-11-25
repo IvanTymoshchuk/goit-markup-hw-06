@@ -49,8 +49,8 @@ ul {
 
 /* header */
 
-.header{
-  border: 1px solid #ECECEC;
+.header {
+  border: 1px solid #ececec;
 }
 
 .header-icon {
@@ -372,7 +372,7 @@ img {
   cursor: pointer;
 
   transition: color 250ms var(--calc-animation),
-      background-color 250ms var(--calc-animation),
+    background-color 250ms var(--calc-animation),
     box-shadow 250ms var(--calc-animation);
 }
 
@@ -400,16 +400,14 @@ img {
   top: 0;
   background-color: rgba(47, 48, 58, 0.4);
   transition: opacity 250ms var(--calc-animation),
-  visibility 250ms var(--calc-animation);
+    visibility 250ms var(--calc-animation);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
-  
+
   pointer-events: none;
- 
-  
 }
 
 .modal {
@@ -429,12 +427,10 @@ img {
 }
 
 .modal-button {
+  position: absolute;
   fill: #000000;
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: var(--bg-color-body);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -531,7 +527,7 @@ img {
   color: var(--icon-color);
 
   transition: background-color 250ms var(--calc-animation),
-  color 250ms var(--calc-animation);
+    color 250ms var(--calc-animation);
 }
 
 .link-icon:focus,
@@ -571,7 +567,7 @@ img {
   color: var(--icon-color);
 
   transition: color 250ms var(--calc-animation),
-  border-color 250ms var(--calc-animation);
+    border-color 250ms var(--calc-animation);
 }
 
 .box-icon-iteam {
@@ -585,7 +581,6 @@ img {
   border-color: var(--actent-color);
   color: var(--actent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
 }
 
 /* Social */
@@ -649,32 +644,112 @@ img {
   transform: translateY(0);
 }
 
-
 /* Вікно Замовити послугу */
 
-.form{
-  border: 1px solid red;
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.form-label{
+.form-label {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  margin-top: 12px;
 }
 
-.form-label label{
+.form-label label {
   margin-bottom: 4px;
   text-align: left;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  color: var(--title-text-color);
 }
 
-.form-label input{
+.form-label input,
+.form-label textarea {
   position: relative;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+.rules {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.title-form {
+  display: block;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--primary-text-color);
+}
+
+.label-icon {
+  position: absolute;
+  top: 55%;
+  left: 12px;
+  display: inline-block;
+}
+
+/* footer підпишись */
+
+.form-label-ft {
+  display: flex;
+}
+
+.form-footer {
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
+
+.title-sub {
+  color: var(--bg-color-body);
+  margin-bottom: 20px;
+}
+
+.form-label-ft input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.bt-form {
+  width: 200px;
+  height: 50px;
+  color: var(--primary-white-color);
+  background-color: var(--actent-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.label-icon-ft {
+  top: 55%;
+  left: 12px;
+  display: inline-block;
+  fill: var(--bg-color-body);
 }
