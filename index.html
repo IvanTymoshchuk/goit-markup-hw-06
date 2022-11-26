@@ -95,7 +95,7 @@
 
               <div class="form-label">
                 <label for="name">Ім'я</label>
-                <input type="text" name="name" id="name" />
+                <input class="form-input" type="text" name="name" id="name" />
                 <svg class="label-icon" width="12" height="12">
                   <use href="./images/symbol-defs.svg#icon-people"></use>
                 </svg>
@@ -103,7 +103,7 @@
 
               <div class="form-label">
                 <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel" />
+                <input class="form-input" type="tel" name="tel" id="tel" />
                 <svg class="label-icon" width="12" height="12">
                   <use href="./images/symbol-defs.svg#icon-telephone2"></use>
                 </svg>
@@ -111,7 +111,7 @@
 
               <div class="form-label">
                 <label for="mail">Пошта</label>
-                <input type="email" name="mail" id="mail" />
+                <input class="form-input" type="email" name="mail" id="mail" />
                 <svg class="label-icon" width="12" height="12">
                   <use href="./images/symbol-defs.svg#icon-mail2"></use>
                 </svg>
@@ -120,6 +120,7 @@
               <div class="form-label">
                 <label for="comment">Коментар</label>
                 <textarea
+                  class="form-input tex-input"
                   name="comment"
                   id="comment"
                   rows="4"
@@ -129,7 +130,9 @@
 
               <div class="form-label rules">
                 <input type="checkbox" name="rules" id="rules" />
+                <span class="rules-icon"></span>
                 <label for="rules">Погоджуюся з розсилкою та приймаю</label>
+                <a href=" " class="link-form">Умови послуги</a>
               </div>
 
               <button type="submit" class="bt-form">Відправити</button>
@@ -670,10 +673,12 @@
             <label for="mails"></label>
             <input type="email" name="mails" id="mails" placeholder="E-mail" />
 
-            <button type="submit" class="bt-form bt-foot">Підписатися</button>
-            <svg class="label-icon-ft" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-telegraph"></use>
-            </svg>
+            <button type="submit" class="bt-form bt-foot">
+              <span>Підписатися</span>
+              <svg class="label-icon-ft" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-telegraph"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
