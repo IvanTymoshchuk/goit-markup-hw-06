@@ -653,6 +653,10 @@ img {
   margin-right: auto;
 }
 
+.texteria::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-label {
   position: relative;
   display: flex;
@@ -661,7 +665,7 @@ img {
   margin-top: 12px;
 }
 
-.form-label label {
+.title-label {
   margin-bottom: 4px;
   text-align: left;
   font-size: 12px;
@@ -670,7 +674,7 @@ img {
   color: var(--title-text-color);
 }
 
-.form-label input {
+.form-input {
   outline: none;
   position: relative;
   padding-top: 11px;
@@ -721,8 +725,18 @@ img {
   fill: var(--bg-svg-icon);
 }
 
+.comment-label{
+  font-size: 14px;
+  line-height: 1.71;
+  margin-right: 5px;
+  color: var(--title-text-color);
+}
+
 .rules {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -730,18 +744,25 @@ img {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid black;
+  border: 2px solid var(--primary-text-color);
   border-radius: 2px;
+  margin-right: 9px;
+}
+
+.checkbox {
+  appearance: none;
 }
 
 .checkbox:checked + .rules-icon {
+  border: 2px solid transparent;
+  fill:var(--primary-white-color);
   background-color: var(--actent-color);
-  background-image: url(../images/check.svg);
+  background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
 
-.link-form{
+.link-form {
   color: var(--bg-svg-icon);
 }
 
@@ -774,6 +795,10 @@ img {
   border-radius: 4px;
 }
 
+.form-label-ft input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .bt-form {
   width: 200px;
   height: 50px;
@@ -788,10 +813,9 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
 }
 
-.bt-foot{
+.bt-foot {
   display: flex;
   align-items: center;
   padding-left: 28px;
