@@ -417,18 +417,21 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   min-height: 581px;
-  min-width: 528px;
-  background-color: var(--primary-white-color);
+  background-color: var(--bg-color-body);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     Opx 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   display: flex;
   justify-content: flex-end;
-  padding: 8px;
+  padding: 40px;
 }
 
 .modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  padding: 0;
   fill: #000000;
   width: 30px;
   height: 30px;
@@ -662,7 +665,6 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  margin-top: 12px;
 }
 
 .title-label {
@@ -677,6 +679,7 @@ img {
 .form-input {
   outline: none;
   position: relative;
+  height: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 42px;
@@ -687,20 +690,22 @@ img {
 .tex-input {
   outline: none;
   position: relative;
+  height: 120px;
+  margin-bottom: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  
 }
 
 .title-form {
   display: block;
-  margin-top: 40px;
   font-size: 20px;
   line-height: 1.15;
+  margin-bottom: 12px;
   color: var(--primary-text-color);
 }
 
@@ -715,7 +720,7 @@ img {
   fill: var(--bg-svg-icon);
 }
 
-.form-input:hover {
+.form-input:focus {
   cursor: pointer;
   border-color: var(--bg-svg-icon);
 }
@@ -789,6 +794,7 @@ img {
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
+  color: var(--bg-color-body);
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
