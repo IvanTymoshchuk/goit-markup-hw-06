@@ -433,6 +433,8 @@ img {
   position: absolute;
   padding: 0;
   fill: #000000;
+  top: 8px;
+  left: 490px;
   width: 30px;
   height: 30px;
   background: var(--bg-color-body);
@@ -595,6 +597,10 @@ img {
 
 .box-footer {
   display: flex;
+}
+
+.box-inf-ft{
+  min-width: 231px;
 }
 
 .box-icon-foot {
